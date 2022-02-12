@@ -19,6 +19,10 @@
 
 .navbar__link {
   color: $text-color;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 @media only screen and (max-width: $mobile) {
@@ -32,7 +36,7 @@
   padding: 64px 32px;
   flex-direction: column;
   width: 256px;
-  height: calc(100vh - 76px);
+  height: calc(100vh - 102px);
   position: absolute;
   left: 0;
   top: 100%;
@@ -40,7 +44,6 @@
   flex-grow: 1;
   z-index: 3;
   background-color: #333A44;
-  
 
   .navbar__list {
     flex-direction: column;
@@ -52,12 +55,7 @@
       margin-bottom: 24px;
     }
   }
-  .navbar__link {
-    color: #fff;
-    font-size: 18px;
-    line-height: 25px;
-  }
   .main__link--header {
-    margin: 0 auto;
+    max-width: 200px;
   }
 }

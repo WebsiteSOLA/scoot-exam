@@ -1,7 +1,11 @@
 .header {
+  width: 100%;
   padding: 22px 0;
-  position: relative;
-
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
 
 .header__container {
