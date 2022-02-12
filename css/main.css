@@ -1216,8 +1216,8 @@ img {
     position: absolute;
     background: url("../img/girl-arrow.svg") no-repeat;
     z-index: 2;
-    bottom: 400px;
-    left: calc(100% - 400px);
+    bottom: 450px;
+    left: calc(100% - 350px);
     display: block;
   }
   .advantage__item {
