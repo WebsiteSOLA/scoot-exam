@@ -29,19 +29,20 @@
 
 .navbar--opened {
   display: flex;
+  padding: 64px 32px;
   flex-direction: column;
-  height: calc(100vh - 64px);
+  width: 256px;
+  height: calc(100vh - 76px);
   position: absolute;
   left: 0;
   top: 100%;
   align-items: stretch;
   flex-grow: 1;
   z-index: 3;
+  background-color: #333A44;
   
 
   .navbar__list {
-    padding: 64px 135px 32px 32px;
-    background-color: #333A44;
     flex-direction: column;
     width: 100%;
   }
