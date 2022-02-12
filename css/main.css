@@ -561,7 +561,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 256px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 76px);
   position: absolute;
   left: 0;
   top: 100%;
@@ -1265,7 +1265,7 @@ img {
   padding: 102px 165px;
   background: url("../img/cta-bg.jpg") no-repeat center center;
   background-color: #495567;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1341,5 +1341,39 @@ img {
   .cta__title {
     font-size: 32px;
   }
+}
+
+.footer {
+  padding: 32px 0;
+  background-color: #333A44;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icon-link {
+  color: #FCB72B;
+  margin-right: 24px;
+}
+
+.footer__icon-link:last-child {
+  margin-right: 0;
+}
+
+.footer__icon-link:hover {
+  color: #E5ECF4;
+}
+
+.footer__link {
+  margin-right: 58px;
 }
 /*# sourceMappingURL=main.css.map */
