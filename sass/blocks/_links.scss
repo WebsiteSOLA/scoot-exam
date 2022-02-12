@@ -1,0 +1,18 @@
+.main__link {
+    padding: 14px 39px;
+    color: $white;
+    border: 3px solid transparent;
+    background-color: $orange;
+    display: inline-block;
+
+    &:active {
+        border: 3px solid $orange;
+        background-color: #fff;
+        color: $orange;
+    }
+}
+.main__link--header {
+    @media only screen and (max-width: 798px) {
+        display: none;
+    }
+}

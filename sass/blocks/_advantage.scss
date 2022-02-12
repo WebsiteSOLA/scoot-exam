@@ -1,0 +1,289 @@
+.advantage {
+    margin-bottom: 307px;
+    overflow: hidden;
+}
+.advantage__container {
+    position: relative;
+}
+.advantage__item-wrapper {
+    max-width: 445px;
+    margin-right: 83px;
+}
+.advantage__list {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+}
+.advantage__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+        margin-bottom: 155px;
+    }
+}
+
+.advantage__title {
+    margin: 0;
+    margin-bottom: 24px;
+    color: $accent;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14286px;
+}
+.advantage__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    color: $text-color;
+    font-family: 'Lexend Deca','Arial',sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+.main__link--advantage {
+    padding: 14px 44px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
+    background-color: $orange;
+    border: none;
+}
+
+.advantage__item-img {
+    border-radius: 50%;
+}
+
+.advantage__item--girl {
+    position: relative;
+    &::before {
+        width: 445px;
+        height: 445px;
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        border: none;
+        right: -460px;
+    }
+        &::after {
+            width: 740px;
+            height: 138px;
+            content: '';
+            position: absolute;
+            background: url("../img/girl-arrow.svg") no-repeat;
+            z-index: 2;
+            bottom: 50px;
+            left: calc(100% - 570px);
+            display: block;
+        }
+}
+
+.advantage__item--city {
+    position: relative;
+    &::before {
+        width: 445px;
+        height: 445px;
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        border: none;
+        left: -460px;
+    }
+    &::after {
+        width: 740px;
+        height: 138px;
+        content: '';
+        position: absolute;
+        background: url("../img/city-arrow.svg") no-repeat;
+        z-index: 2;
+        top: 0;
+        right: calc(100% - 200px);
+        display: block;
+    }
+}
+.advantage__item--person {
+    position: relative;
+    &::before {
+        width: 445px;
+        height: 445px;
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        border: none;
+        right: -460px;
+    }
+    &::after {
+        width: 740px;
+        height: 138px;
+        content: '';
+        position: absolute;
+        background: url("../img/girl-arrow.svg") no-repeat;
+        z-index: 2;
+        top: 50px;
+        left: calc(100% - 200px);
+        display: block;
+    }
+}
+.advantage__item--girl {
+    flex-direction: row-reverse;
+}
+.advantage__item--person {
+    flex-direction: row-reverse;
+}
+@media only screen and(max-width: $tablet) {
+    .advantage__list {
+        margin: 0 auto;
+    }
+    .advantage__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .advantage__item-wrapper {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .advantage__item--girl {
+        position: relative;
+        &::before {
+            width: 445px;
+            height: 445px;
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: #E5ECF4;
+            border-radius: 50%;
+            border: none;
+            right: -280px;
+        }
+            &::after {
+                width: 740px;
+                height: 138px;
+                content: '';
+                position: absolute;
+                background: url("../img/girl-arrow.svg") no-repeat;
+                z-index: 2;
+                bottom: 400px;
+                left: calc(100% - 800px);
+                display: block;
+            }
+    }
+    .advantage__item--city {
+        position: relative;
+        &::before {
+            width: 445px;
+            height: 445px;
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: #E5ECF4;
+            border-radius: 50%;
+            border: none;
+            left: -340px;
+        }
+        &::after {
+            width: 740px;
+            height: 138px;
+            content: '';
+            position: absolute;
+            background: url("../img/city-arrow.svg") no-repeat;
+            z-index: 2;
+            top: 0;
+            right: calc(100% - 400px);
+            display: block;
+        }
+    }
+    .advantage__item--person {
+        position: relative;
+        &::before {
+            width: 445px;
+            height: 445px;
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: #E5ECF4;
+            border-radius: 50%;
+            border: none;
+            right: -340px;
+        }
+        &::after {
+            width: 740px;
+            height: 138px;
+            content: '';
+            position: absolute;
+            background: url("../img/girl-arrow.svg") no-repeat;
+            z-index: 2;
+            top: 50px;
+            left: calc(100% - 400px);
+            display: block;
+        }
+    }
+}
+@media only screen and(max-width: $mobile) {
+    .advantage__item--girl {
+        &::before {
+            display: none;
+        }
+        &::after {
+            width: 740px;
+            height: 138px;
+            content: '';
+            position: absolute;
+            background: url("../img/girl-arrow.svg") no-repeat;
+            z-index: 2;
+            bottom: 400px;
+            left: calc(100% - 400px);
+            display: block;
+        }
+    }
+    .advantage__item {
+        margin: 0 auto;
+    }
+    .advantage__item-img {
+        width: 311px;
+        height: 311px;
+    }
+    .advantage__item--city {
+        &::before {
+        display: none;
+        }
+        &::after {
+            width: 740px;
+            height: 138px;
+            content: '';
+            position: absolute;
+            background: url("../img/city-arrow.svg") no-repeat;
+            z-index: 2;
+            top: 0;
+            right: calc(100% - 280px);
+            display: block;   
+        }
+    }
+    .advantage__item--person {
+        &::before {
+        display: none;
+        }
+        &::after {
+            width: 740px;
+            height: 138px;
+            content: '';
+            position: absolute;
+            background: url("../img/girl-arrow.svg") no-repeat;
+            z-index: 2;
+            top: 30px;
+            left: calc(100% - 250px);
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,179 @@
+.services {
+    margin: 160px 0px 147px;
+}
+.services__container {
+    max-width: 1305px;
+    margin-right: auto;
+    padding: 0 15px;
+}
+@media only screen and(max-width: $tablet) {
+    .services__container{
+        max-width: 798px;
+    }
+}
+
+.services__list {
+    @include reset-list;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.services__item-title {
+    margin: 0;
+    margin-bottom: 27px;
+    margin-top: 40px;
+    font-size: 24px;
+    color: $accent;
+}
+
+.services__item-description {
+    margin: 0;
+    font-family: 'Lexend Deca', 'Arial', sans-serif;
+    font-weight: 400;
+    color: $text-color;
+}
+
+.services__item--tel::before {
+    width: 96px;
+    height: 96px;
+    display: block;
+    content: '';
+    padding: 0;
+    padding: 24px 29px;
+    background-image: url("../img/telefon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $orange;
+    border-radius: 50%;
+}
+
+.services__item--car::before {
+    width: 96px;
+    height: 96px;
+    display: block;
+    content: '';
+    padding: 0;
+    padding: 24px 29px;
+    background-image: url("../../img/traktor.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $orange;
+    border-radius: 50%;
+}
+
+.services__item--ride::before {
+    width: 96px;
+    height: 96px;
+    display: block;
+    content: '';
+    padding: 0;
+    padding: 24px 29px;
+    background-image: url("../img/001-scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $orange;
+    border-radius: 50%;
+}
+
+.services__list {
+    position: relative;
+    &::after {
+    width: 1200px;
+    height: 15px;
+    position: absolute;
+    display: block;
+    content: '';
+    top: 50px;
+    left: -200px;
+    background-color: #E5ECF4;
+    z-index: -1;
+    }
+
+}
+
+.services__wrapper {
+    max-width: 350px;
+}
+@media only screen and(max-width: $tablet) {
+    .services__item {
+        margin-right: 0;
+        display: flex;
+
+        &::before {
+            margin-top: 48px;
+            margin-right: 79px;
+        }
+    }
+    .services__list {
+        flex-direction: column;
+        margin: 0 auto;
+
+        &::after {
+        width: 15px;
+        height: 630px;
+        left: 135px;
+        top: -160px;
+        }
+    }
+    .services__wrapper {
+        max-width: 400px;
+    }
+}
+@media only screen and(max-width: $mobile) {
+    .sevices__item {
+        display: block;
+
+        &::before {
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+    .services__list {
+        flex-direction: column;
+        margin: 0 auto;
+
+        &::after {
+        display: none;
+        }
+    }
+    .services__item--tel {
+        display: block;
+        text-align: center;
+        margin-bottom: 48px;
+        &::before {
+        margin-right: 0;
+        margin-top: 0;
+        margin: 0 auto;
+        }
+    }
+    .services__item--car {
+        display: block;
+        text-align: center;
+        margin-bottom: 48px;
+        &::before {
+            margin-right: 0;
+            margin-top: 0;
+            margin: 0 auto;
+        }
+    }
+    .services__item--ride {
+        display: block;
+        text-align: center;
+        &::before {
+            margin-right: 0;
+            margin-top: 0;
+            margin: 0 auto;
+        }
+    }
+}
