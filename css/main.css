@@ -561,7 +561,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 256px;
-  height: calc(100vh - 76px);
+  height: calc(100vh - 64px);
   position: absolute;
   left: 0;
   top: 100%;
@@ -1262,19 +1262,11 @@ img {
 }
 
 .cta {
-  padding: 102px 165px;
-  background: url("../img/cta-bg.jpg") no-repeat center center;
   background-color: #495567;
-  background-size: contain;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .cta {
-    background-image: url("../img/cta-bg@2x.jpg");
-  }
 }
 
 .cta__container {
+  padding: 102px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1284,6 +1276,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("../img/cta-bg.jpg") no-repeat center right;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .cta__container {
+    background-image: url("../img/cta-bg@2x.jpg");
+  }
 }
 
 .cta__title {
@@ -1294,23 +1293,29 @@ img {
   color: #FFFFFF;
 }
 
+.cta__img--appstore {
+  margin-right: 13px;
+}
+
 @media only screen and (max-width: 1136px) {
-  .cta {
+  .cta__container {
     padding: 62px 155px;
     background: url("../img/cta-bg-tablet.jpg") no-repeat;
     background-position: center center;
-    background-color: #495567;
     background-size: cover;
   }
 }
 
 @media only screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-resolution: 192dpi), only screen and (max-width: 1136px) and (min-resolution: 2dppx) {
-  .cta {
+  .cta__container {
     background-image: url("../img/cta-bg-tablet@2x.jpg");
   }
 }
 
 @media only screen and (max-width: 1136px) {
+  .cta__container .cta {
+    background-color: #495567;
+  }
   .cta__title {
     text-align: center;
   }
@@ -1332,14 +1337,46 @@ img {
 }
 
 @media only screen and (max-width: 798px) {
-  .cta {
+  .cta__container {
     padding: 88px 32px;
-    background: url("../img/cta-bg-mobile.jpg") no-repeat center center;
+    background: url("../img/cta-bg-mobile.jpg") no-repeat center right;
     background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 798px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 798px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 798px) and (min-device-pixel-ratio: 2), only screen and (max-width: 798px) and (min-resolution: 192dpi), only screen and (max-width: 798px) and (min-resolution: 2dppx) {
+  .cta__container {
+    background-image: url("../img/cta-bg-mobile@2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .cta {
     background-color: #495567;
   }
   .cta__title {
+    max-width: 100%;
     font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .cta__img-wrapper {
+    width: 311px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+  }
+  .cta__img--appstore {
+    width: 113px;
+    margin-right: 0;
+  }
+  .cta__img-wrapper {
+    margin: 0 auto;
   }
 }
 
@@ -1360,6 +1397,45 @@ img {
           align-items: center;
 }
 
+.footer__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__navbar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__navbar-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.footer__navbar-link {
+  color: #939caa;
+}
+
+.footer__navbar-link:hover {
+  color: #fcb72b;
+}
+
 .footer__icon-link {
   color: #FCB72B;
   margin-right: 24px;
@@ -1375,5 +1451,57 @@ img {
 
 .footer__link {
   margin-right: 58px;
+}
+
+@media only screen and (max-width: 798px) {
+  .footer {
+    padding: 64px 68px 88px 68px;
+  }
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .footer__navbar-list {
+    margin-bottom: 87px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    text-align: center;
+  }
+  .footer__link {
+    margin: 0 auto;
+    margin-bottom: 41px;
+  }
+  .footer__icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__navbar-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .footer__navbar-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .footer__navbar-item:last-child {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

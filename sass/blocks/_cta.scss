@@ -1,8 +1,12 @@
 .cta {
-    padding: 102px 165px;
-    background: url("../img/cta-bg.jpg") no-repeat center center;
     background-color: #495567;
-    background-size: contain;
+}
+.cta__container {
+    padding: 102px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../img/cta-bg.jpg") no-repeat center right;
 
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
@@ -14,11 +18,6 @@
          background-image: url("../img/cta-bg@2x.jpg");
     }
 }
-.cta__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .cta__title {
     margin: 0;
     font-size: 48px;
@@ -26,12 +25,14 @@
     letter-spacing: -2.14286px;
     color: #FFFFFF;
 }
+.cta__img--appstore {
+    margin-right: 13px;
+}
 @media only screen and(max-width: $tablet) {
-    .cta {
+    .cta__container {
         padding: 62px 155px;
         background: url("../img/cta-bg-tablet.jpg") no-repeat;
         background-position: center center;
-        background-color: #495567;
         background-size: cover;
 
         @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -42,6 +43,9 @@
     only screen and (min-resolution: 2dppx) {
 
          background-image: url("../img/cta-bg-tablet@2x.jpg");
+    }
+    .cta {
+        background-color: #495567;
     }
     }
     .cta__title {
@@ -59,13 +63,42 @@
     }
 }
 @media only screen and(max-width: $mobile) {
-    .cta {
+    .cta__container {
         padding: 88px 32px;
-        background: url("../img/cta-bg-mobile.jpg") no-repeat center center;
+        background: url("../img/cta-bg-mobile.jpg") no-repeat center right;
         background-size: cover;
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+    
+             background-image: url("../img/cta-bg-mobile@2x.jpg");
+        }
+    }
+    .cta {
         background-color: #495567;
     }
     .cta__title {
+        max-width: 100%;
         font-size: 32px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .cta__img-wrapper {
+        width: 311px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+       
+    }
+    .cta__img--appstore {
+        width: 113px;
+        margin-right: 0;
+    }
+    .cta__img-wrapper {
+        margin: 0 auto;
     }
 }
