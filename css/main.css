@@ -1338,6 +1338,13 @@ img {
 
 @media only screen and (max-width: 798px) {
   .cta__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding: 88px 32px;
     background: url("../img/cta-bg-mobile.jpg") no-repeat center right;
     background-size: cover;
@@ -1361,22 +1368,16 @@ img {
     margin-bottom: 40px;
   }
   .cta__img-wrapper {
-    width: 311px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 40px;
   }
   .cta__img--appstore {
     width: 113px;
-    margin-right: 0;
   }
-  .cta__img-wrapper {
-    margin: 0 auto;
+  .cta__img--google {
+    width: 130px;
   }
 }
 
