@@ -648,7 +648,7 @@ img {
   content: '';
   background-image: url("../img/arrow.png");
   top: 50%;
-  right: 280px;
+  right: 100px;
 }
 
 .intro__container::before {
