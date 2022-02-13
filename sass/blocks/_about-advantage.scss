@@ -1,0 +1,79 @@
+.about-advantage {
+    margin-bottom: 72px;
+    display: none;
+}
+.advantage__item--about-girl {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    &::before {
+        width: 445px;
+        height: 445px;
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        border: none;
+        right: -460px;
+    }
+        &::after {
+            width: 740px;
+            height: 200px;
+            content: '';
+            position: absolute;
+            background: url("../img/about-arrow.svg") no-repeat;
+            z-index: 2;
+            bottom: 0px;
+            left: calc(100% - 570px);
+            display: block;
+        }
+}
+.about__item-img {
+    border-radius: 50%;
+}
+.advantage__item--about-city {
+    display: flex;
+    position: relative;
+    &::before {
+        width: 445px;
+        height: 445px;
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        border: none;
+        left: -460px;
+    }
+        &::after {
+            width: 740px;
+            height: 200px;
+            content: '';
+            position: absolute;
+            background: url("../img/city-arrow.svg") no-repeat;
+            z-index: 2;
+            top: 0;
+            right: calc(100% - 200px);
+            display: block;
+        }
+}
+.about-advantage__title {
+    margin: 0;
+    margin-bottom: 24px;
+    color: $accent;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14286px;
+}
+.about-advantage__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    color: $text-color;
+    font-family: 'Lexend Deca','Arial',sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}

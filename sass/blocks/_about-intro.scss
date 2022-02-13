@@ -1,0 +1,61 @@
+.about-intro {
+    padding: 72px 165px;
+    background: url("../img/about-intro.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 120px;
+
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        background-image: url("../img/about-intro@2x.jpg");
+    }
+    .about-intro__title {
+        font-size: 56px;
+        line-height: 1px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+}
+@media only screen and(max-width: $tablet) {
+    .about-intro {
+        padding: 72px 97px;
+        background-image: url("../img/about-intro-tablet.jpg");
+        margin-bottom: 144px;
+
+          
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        background-image: url("../img/about-intro-tablet@2x.jpg");
+    }
+    }
+}
+@media only screen and(max-width: $mobile) {
+    .about-intro {
+        padding: 60px 32px;
+        background-image: url("../img/about-intro-mobile.jpg");
+        margin-bottom: 72px;
+                
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        background-image: url("../img/about-intro-mobile@2x.jpg");
+    }
+    }
+    .about-intro__title {
+        text-align: center;
+    }
+}
