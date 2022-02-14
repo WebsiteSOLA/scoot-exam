@@ -1506,7 +1506,7 @@ img {
   }
 }
 
-.about-intro {
+.intro-about {
   padding: 72px 165px;
   background: url("../img/about-intro.jpg") no-repeat center center;
   background-size: cover;
@@ -1514,12 +1514,12 @@ img {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .about-intro {
+  .intro-about {
     background-image: url("../img/about-intro@2x.jpg");
   }
 }
 
-.about-intro .about-intro__title {
+.intro-about .about-intro__title {
   font-size: 56px;
   line-height: 1px;
   letter-spacing: -2.5px;
@@ -1527,7 +1527,7 @@ img {
 }
 
 @media only screen and (max-width: 1136px) {
-  .about-intro {
+  .intro-about {
     padding: 72px 97px;
     background-image: url("../img/about-intro-tablet.jpg");
     margin-bottom: 144px;
@@ -1535,13 +1535,13 @@ img {
 }
 
 @media only screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-resolution: 192dpi), only screen and (max-width: 1136px) and (min-resolution: 2dppx) {
-  .about-intro {
+  .intro-about {
     background-image: url("../img/about-intro-tablet@2x.jpg");
   }
 }
 
 @media only screen and (max-width: 798px) {
-  .about-intro {
+  .intro--about {
     padding: 60px 32px;
     background-image: url("../img/about-intro-mobile.jpg");
     margin-bottom: 72px;
@@ -1549,7 +1549,7 @@ img {
 }
 
 @media only screen and (max-width: 798px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 798px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 798px) and (min-device-pixel-ratio: 2), only screen and (max-width: 798px) and (min-resolution: 192dpi), only screen and (max-width: 798px) and (min-resolution: 2dppx) {
-  .about-intro {
+  .intro--about {
     background-image: url("../img/about-intro-mobile@2x.jpg");
   }
 }

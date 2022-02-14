@@ -1,4 +1,4 @@
-.about-intro {
+.intro-about {
     padding: 72px 165px;
     background: url("../img/about-intro.jpg") no-repeat center center;
     background-size: cover;
@@ -22,7 +22,7 @@
     }
 }
 @media only screen and(max-width: $tablet) {
-    .about-intro {
+    .intro-about {
         padding: 72px 97px;
         background-image: url("../img/about-intro-tablet.jpg");
         margin-bottom: 144px;
@@ -40,7 +40,7 @@
     }
 }
 @media only screen and(max-width: $mobile) {
-    .about-intro {
+    .intro--about {
         padding: 60px 32px;
         background-image: url("../img/about-intro-mobile.jpg");
         margin-bottom: 72px;
