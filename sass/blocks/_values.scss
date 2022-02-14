@@ -1,0 +1,100 @@
+.values {
+    margin-bottom: 120px;
+}
+.values__list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+}
+.values__item {
+    display: block;
+    text-align: center;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.values__item-wrapper {
+    max-width: 350px;
+}
+.values__title {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+.values__item-title {
+    margin: 0;
+    margin-bottom: 27px;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+.values__item-desc {
+    font-family: 'Lexend Deca','Arial',sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #939CAA;   
+}
+.values__item-img {
+    border-radius: 50%;
+}
+.values__item-inner {
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    width: 96px;
+    padding: 34px 34px;
+    background-color: $orange;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    
+}
+@media only screen and(max-width: $tablet) {
+    .values__list {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .values__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .values__item-wrapper {
+        max-width: 357px;
+    }
+    .values__title {
+        margin-bottom: 87px;
+    }
+    .values__item {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 55px;
+        }
+    }
+    .values {
+        margin-top: 120px;
+    }
+}
+@media only screen and(max-width: $mobile) {
+    .values__item-wrapper {
+        max-width: 311px;
+    }
+    .values {
+        margin-bottom: 145px;
+    }
+}
+
