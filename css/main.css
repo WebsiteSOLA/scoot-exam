@@ -353,7 +353,7 @@ body {
   margin: 0;
   line-height: 1.5;
   font-family: 'Space Mono','Arial',sans-serif;
-  margin-top: 102px;
+  margin-top: 58px;
 }
 
 a {
@@ -561,7 +561,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 256px;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 58px);
   position: absolute;
   left: 0;
   top: 100%;
