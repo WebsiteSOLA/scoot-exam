@@ -1849,6 +1849,10 @@ img {
   margin-bottom: 16px;
 }
 
+.question__button:hover {
+  background-color: #FFF4DF;
+}
+
 .question__button::after {
   display: block;
   content: '';

@@ -34,7 +34,9 @@
     &:not(:last-child) {
         margin-bottom: 16px;
     }
-
+    &:hover {
+        background-color: #FFF4DF;
+    }
     &::after {
         display: block;
         content: '';
