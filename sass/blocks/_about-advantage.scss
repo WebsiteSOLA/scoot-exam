@@ -1,8 +1,11 @@
-.about-advantage {
+.advantage--about {
     margin-bottom: 72px;
-    display: none;
 }
-.advantage__item--about-girl {
+.advantage__item {
+    display: flex;
+    justify-content: space-between;
+}
+.advantage__item-img--about-girl {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
@@ -32,7 +35,7 @@
 .about__item-img {
     border-radius: 50%;
 }
-.advantage__item--about-city {
+.advantage__item-img--about-city {
     display: flex;
     position: relative;
     &::before {
@@ -76,4 +79,10 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
+}
+.advantage__item-wrapper {
+
+    &:last-child {
+        margin-right: 0;
+    }
 }

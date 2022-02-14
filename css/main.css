@@ -1560,12 +1560,20 @@ img {
   }
 }
 
-.about-advantage {
+.advantage--about {
   margin-bottom: 72px;
-  display: none;
 }
 
-.advantage__item--about-girl {
+.advantage__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantage__item-img--about-girl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1576,7 +1584,7 @@ img {
   position: relative;
 }
 
-.advantage__item--about-girl::before {
+.advantage__item-img--about-girl::before {
   width: 445px;
   height: 445px;
   content: '';
@@ -1588,7 +1596,7 @@ img {
   right: -460px;
 }
 
-.advantage__item--about-girl::after {
+.advantage__item-img--about-girl::after {
   width: 740px;
   height: 200px;
   content: '';
@@ -1604,14 +1612,14 @@ img {
   border-radius: 50%;
 }
 
-.advantage__item--about-city {
+.advantage__item-img--about-city {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.advantage__item--about-city::before {
+.advantage__item-img--about-city::before {
   width: 445px;
   height: 445px;
   content: '';
@@ -1623,7 +1631,7 @@ img {
   left: -460px;
 }
 
-.advantage__item--about-city::after {
+.advantage__item-img--about-city::after {
   width: 740px;
   height: 200px;
   content: '';
@@ -1654,5 +1662,9 @@ img {
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
+}
+
+.advantage__item-wrapper:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
