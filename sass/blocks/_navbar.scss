@@ -47,6 +47,11 @@
   z-index: 3;
   .navbar__link {
     color: #E5ECF4;
+
+    &:hover {
+      color: $orange;
+      opacity: 0.75;
+    }
   }
   .navbar__list {
     flex-direction: column;

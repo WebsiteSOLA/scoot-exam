@@ -611,6 +611,11 @@ img {
   color: #E5ECF4;
 }
 
+.navbar--opened .navbar__link:hover {
+  color: #fcb72b;
+  opacity: 0.75;
+}
+
 .navbar--opened .navbar__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1175,7 +1180,7 @@ img {
     background-color: #E5ECF4;
     border-radius: 50%;
     border: none;
-    right: -280px;
+    right: -340px;
   }
   .advantage__item--girl::after {
     width: 740px;
@@ -2003,8 +2008,8 @@ img {
     font-size: 18px;
   }
   .question__item-btn::after {
-    right: 20px;
-    top: 50%;
+    right: -15px;
+    top: 40%;
   }
   .question__wrapper-title {
     font-size: 24px;
