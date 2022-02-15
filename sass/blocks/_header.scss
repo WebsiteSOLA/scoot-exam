@@ -1,3 +1,14 @@
+@keyframes header-opening {
+  0% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .header {
   width: 100%;
   padding: 22px 0;

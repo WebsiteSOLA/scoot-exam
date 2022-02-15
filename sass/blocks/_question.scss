@@ -88,3 +88,14 @@
         padding: 32px 60px 32px 32px;
     }
 }
+//.question__button--opened {
+    //top: 50%;
+    //right: 10px;
+   // background-image: url("../img/question-arrow.svg");
+    //background-repeat: no-repeat;
+
+.question__button-desc--opened {
+    display: block;
+   position: absolute;
+   padding: 32px 40px;
+ }

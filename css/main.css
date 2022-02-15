@@ -410,6 +410,36 @@ img {
   }
 }
 
+@-webkit-keyframes header-opening {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  75% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes header-opening {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  75% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .header {
   width: 100%;
   padding: 22px 0;
@@ -555,6 +585,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: header-opening 1000ms linear;
+          animation: header-opening 1000ms linear;
   padding: 64px 32px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -572,22 +604,22 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   z-index: 3;
-  background-color: #333A44;
 }
 
-.navbar--opened .navbar__list {
+.navbar__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  background-color: #333A44;
 }
 
-.navbar--opened .navbar__item:not(:last-child) {
+.navbar__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.navbar--opened .main__link--header {
+.main__link--header {
   max-width: 200px;
 }
 
@@ -1714,7 +1746,7 @@ img {
 .values__item-title {
   margin: 0;
   margin-bottom: 27px;
-  margin-top: 32px;
+  margin-top: 87px;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -1736,10 +1768,15 @@ img {
   border-radius: 50%;
 }
 
+.values__item-img-wrapper {
+  position: relative;
+}
+
 .values__item-inner {
   margin: 0 auto;
   display: block;
   padding: 0;
+  position: absolute;
   width: 96px;
   padding: 34px 34px;
   background-color: #fcb72b;
@@ -1749,6 +1786,8 @@ img {
   text-align: center;
   letter-spacing: -1.07143px;
   color: #495567;
+  bottom: -45px;
+  left: 125px;
 }
 
 @media only screen and (max-width: 1136px) {
@@ -1783,6 +1822,9 @@ img {
   }
   .values {
     margin-top: 120px;
+  }
+  .values__item-inner {
+    left: 75px;
   }
 }
 
@@ -1915,5 +1957,11 @@ img {
   .question__button--safe {
     padding: 32px 60px 32px 32px;
   }
+}
+
+.question__button-desc--opened {
+  display: block;
+  position: absolute;
+  padding: 32px 40px;
 }
 /*# sourceMappingURL=main.css.map */

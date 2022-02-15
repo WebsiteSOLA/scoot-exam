@@ -33,6 +33,7 @@
 
 .navbar--opened {
   display: flex;
+  animation: header-opening 1000ms linear;
   padding: 64px 32px;
   flex-direction: column;
   width: 256px;
@@ -43,11 +44,12 @@
   align-items: stretch;
   flex-grow: 1;
   z-index: 3;
-  background-color: #333A44;
+}
 
   .navbar__list {
     flex-direction: column;
     width: 100%;
+    background-color: #333A44;
   }
   .navbar__item {
     
@@ -58,4 +60,4 @@
   .main__link--header {
     max-width: 200px;
   }
-}
+

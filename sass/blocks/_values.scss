@@ -29,7 +29,7 @@
 .values__item-title {
     margin: 0;
     margin-bottom: 27px;
-    margin-top: 32px;
+    margin-top: 87px;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -48,10 +48,14 @@
 .values__item-img {
     border-radius: 50%;
 }
+.values__item-img-wrapper {
+    position: relative;
+}
 .values__item-inner {
     margin: 0 auto;
     display: block;
     padding: 0;
+    position: absolute;
     width: 96px;
     padding: 34px 34px;
     background-color: $orange;
@@ -61,7 +65,8 @@
     text-align: center;
     letter-spacing: -1.07143px;
     color: #495567;
-    
+    bottom: -45px;
+    left: 125px;
 }
 @media only screen and(max-width: $tablet) {
     .values__list {
@@ -87,6 +92,9 @@
     }
     .values {
         margin-top: 120px;
+    }
+    .values__item-inner {
+       left: 75px;
     }
 }
 @media only screen and(max-width: $mobile) {
