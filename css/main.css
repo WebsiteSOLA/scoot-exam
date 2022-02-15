@@ -622,10 +622,6 @@ img {
   margin-bottom: 24px;
 }
 
-.navbar--opened .main__link--header {
-  max-width: 200px;
-}
-
 .main__link {
   padding: 14px 39px;
   color: #fff;
