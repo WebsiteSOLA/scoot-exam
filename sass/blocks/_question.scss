@@ -2,9 +2,10 @@
     margin-bottom: 160px;
 }
 .question__list {
+    @include reset-list;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    margin-left: 100px;
 }
 .question__title {
     margin: 0;
@@ -16,86 +17,127 @@
     letter-spacing: -2.14286px;
     color: #495567;
 }
-.question__button-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-.question__button {
-    position: relative;
-    padding: 32px 334px 32px 40px;
-    background-color: #F2F5F9;
-    border: none;
+.question__wrapper-title {
+    margin: 0;
+    padding: 0;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1.07143px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
     color: #495567;
-    cursor: pointer;
+}
+.question__item {
+    padding: 32px 40px;
+    max-width: 730px;
+    background-color: #F2F5F9;
     &:not(:last-child) {
         margin-bottom: 16px;
     }
     &:hover {
         background-color: #FFF4DF;
+        cursor: pointer;
+    }
+}
+.question__item-desc {
+    margin: 0;
+    margin-top: 24px;
+    font-family: 'Lexend Deca','Arial',sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+.question__item-btn {
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    &:hover {
+        cursor: pointer;
     }
     &::after {
         display: block;
+        width: 20px;
+        height: 15px;
         content: '';
         position: absolute;
-        height: 16px;
-        width: 20px;
-        right: 50px;
+        background: url("../img/faqs-btn.svg") no-repeat;
         top: 50%;
-        background-image: url("../img/faqs-btn.svg");
-        background-repeat: no-repeat;
+        right: 50px;
     }
 }
-.question__button-desc {
-    display: none;
- }
-.question__item-title {
-    margin: 0;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -1.78571px;
-    color: #495567;
+.question__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-.question__list--safe {
+.question__item-desc {
+    width: 650px;
+    display: none;
+    background-color: #FFF4DF;
+}
+.question__wrapper--safe {
     margin-top: 64px;
 }
-.question__button--safe {
-    padding: 32px 250px 32px 40px;
+
+.work--opened,
+.safe--opened  {
+    &::after {
+        transform: rotate(180deg);
+    }
+}
+.work--opened ~ .question__item-desc {
+    display: block;
+    background-color: transparent;
+}
+.safe--opened ~ .question__item-desc {
+    display: block;
+    background-color: transparent;
 }
 @media only screen and(max-width: $tablet) {
+    .question__wrapper {
+        display: block;
+    }
     .question__list {
+        margin-left: 0;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
-    .question__item-title {
+    .question__wrapper-title {
         margin-bottom: 32px;
+        text-align: center;
     }
-    .question__list--safe {
-        margin-top: 64px;
+    .question__item {
+        width: 689px;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+    .question__item-desc {
+        width: 617px;
     }
 }
 @media only screen and(max-width: $mobile) {
-    .question__button {
-        padding: 32px 60px 32px 32px;
+    .question__item {
+        width: 311px;
     }
-    .question__button--safe {
-        padding: 32px 60px 32px 32px;
+    .question__item-btn {
+        font-size: 18px;
+        &::after {
+            right: 20px;
+            top: 50%;
+        }
+    }
+    .question__wrapper-title {
+        font-size: 24px;
+    }
+    .question__item-desc {
+        width: 251px;
     }
 }
-//.question__button--opened {
-    //top: 50%;
-    //right: 10px;
-   // background-image: url("../img/question-arrow.svg");
-    //background-repeat: no-repeat;
-
-.question__button-desc--opened {
-    display: block;
-   position: absolute;
-   padding: 32px 40px;
- }

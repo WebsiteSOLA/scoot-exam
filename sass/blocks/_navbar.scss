@@ -33,23 +33,30 @@
 
 .navbar--opened {
   display: flex;
-  animation: header-opening 1000ms linear;
+  animation: header-opening 700ms linear;
   padding: 64px 32px;
   flex-direction: column;
-  width: 256px;
+  width: 375px;
   height: calc(100vh - 58px);
   position: absolute;
   left: 0;
   top: 100%;
   align-items: stretch;
   flex-grow: 1;
+  background-color: #333A44;
   z-index: 3;
-}
 
+.navbar--opened::after {
+  width: 100%;
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.75;
+}
   .navbar__list {
     flex-direction: column;
-    width: 100%;
-    background-color: #333A44;
   }
   .navbar__item {
     
@@ -60,4 +67,4 @@
   .main__link--header {
     max-width: 200px;
   }
-
+}
