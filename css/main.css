@@ -592,7 +592,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 375px;
+  width: 70%;
   height: calc(100vh - 58px);
   position: absolute;
   left: 0;
@@ -605,16 +605,6 @@ img {
           flex-grow: 1;
   background-color: #333A44;
   z-index: 3;
-}
-
-.navbar--opened .navbar--opened::after {
-  width: 100%;
-  display: block;
-  content: '';
-  position: absolute;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.75;
 }
 
 .navbar--opened .navbar__list {
