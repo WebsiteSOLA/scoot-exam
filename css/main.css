@@ -587,7 +587,7 @@ img {
   display: flex;
   -webkit-animation: header-opening 700ms linear;
           animation: header-opening 700ms linear;
-  padding: 64px 32px;
+  padding: 64px 32px 24px 32px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
