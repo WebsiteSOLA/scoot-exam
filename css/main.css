@@ -604,8 +604,11 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #333A44;
-  color: #E5ECF4;
   z-index: 3;
+}
+
+.navbar--opened .navbar__link {
+  color: #E5ECF4;
 }
 
 .navbar--opened .navbar__list {
