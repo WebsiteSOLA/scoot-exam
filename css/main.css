@@ -637,6 +637,7 @@ img {
   border: 3px solid transparent;
   background-color: #fcb72b;
   display: inline-block;
+  text-align: center;
 }
 
 .main__link:active {
